@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #2f3640;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 350px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.input-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border: 2px solid #70e6f3;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.cityInput {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.search-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Styling for weather details */
+.weather-details {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.weather-icon {
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Styling for the temperature */
+.temp {
+  margin-top: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #2f3640;
+}
+
+/* Styling for the location (city and country) */
+.location {
+  margin-top: 5px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #1abc9c; /* Green color for city and country */
+  text-align: center;
+}
+
+.location div {
+  margin-top: 5px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #3498db; /* Blue color for country */
+}
+
+/* Styling for coordinates (latitude, longitude) */
+.cord {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #34495e; /* Darker grey for coordinates */
+  display: flex;
+  justify-content: space-between; /* Space between lat and log */
+  width: 100%; /* Ensure it aligns across the width */
+}
+
+.cord div {
+  text-align: center; /* Center the text inside each coordinate block */
+  width: 50%; /* Ensure lat and log take up equal space */
+}
+
+.lat, .log {
+  font-weight: 600;
+  color: #1abc9c; /* Green color for latitude and longitude labels */
+  display: block;
+  margin-bottom: 5px; /* Add space between label and value */
+}
+
+.cord-value {
+  font-weight: 400;
+  color: #2f3640;
+  font-size: 16px;
+}
+
+/* Styling for data elements like humidity and wind */
+.data-container {
+  display: flex;
+  justify-content: space-around; /* Align elements horizontally with space around them */
+  width: 100%;
+  margin-top: 15px;
+  align-items: center; /* Ensure both elements (humidity and wind) are vertically aligned */
+}
+
+.element {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 45%; /* Ensure both elements have equal width */
+}
+
+.icon {
+  width: 40px; /* Standard size for icons */
+  height: 40px; /* Ensure both humidity and wind icons are the same size */
+  object-fit: contain;
+  margin-bottom: 5px; /* Space between icon and text */
+}
+
+.data {
+  text-align: center;
+  font-size: 16px;
+  color: #2f3640;
+}
+
+.text {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #7f8c8d;
+}
+
+.humidity-percent, .wind-percent {
+  font-size: 16px;
+  font-weight: bold;
+  color: #34495e; /* Darker grey for data values */
+}
+
+.element:last-child {
+  margin-left: auto; /* Move the last element (wind) to the right */
+  margin-left: 100px; /* Move it 50px to the left */
+}
+
+/* Ensure the percentage or value texts are consistent */
+.humidity-percent, .wind-percent {
+  font-size: 16px;
+  font-weight: bold;
+  color: #34495e;
+}
+
+.weather-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.copyright
+{
+  text-align: center;
+  font-size: 12px;
+  color: #888;
+
+}
+.copyright span
+{
+color: #333;
+}
